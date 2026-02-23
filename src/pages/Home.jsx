@@ -13,6 +13,9 @@ import ActionButton from '../components/ActionButton'
 import ProductCard from '../components/ProductCard'
 import ReviewCard from '../components/ReviewCard'
 import Aktualita from '../components/Aktualita'
+import BlogCard from '../components/BlogCard'
+import BannerCard from '../components/BannerCard'
+import Footer from '../components/Footer'
 import product1 from '../assets/pictures/products/Product1.png'
 import product2 from '../assets/pictures/products/Product2.png'
 import product3 from '../assets/pictures/products/Product3.png'
@@ -20,6 +23,9 @@ import product4 from '../assets/pictures/products/Product4.png'
 import teacher1 from '../assets/pictures/teacher/teacher1.png'
 import teacher2 from '../assets/pictures/teacher/teacher2.png'
 import teacher3 from '../assets/pictures/teacher/teacher3.png'
+import blog1 from '../assets/pictures/blog/blog1.png'
+import blog2 from '../assets/pictures/blog/blog2.png'
+import blog3 from '../assets/pictures/blog/blog3.png'
 
 function Home() {
   return (
@@ -166,8 +172,45 @@ function Home() {
         </div>
       </div>
 
+    
+
       <Aktualita image={bgImage4} className="lg:ml-40" pillLabel={"\u0053\u00FA\u0165a\u017E"} heading={"Klimatick\u00E1 sebazmena"} description={"Organiz\u00E1tori festivalu udr\u017Eate\u013En\u00E9ho \u017Eivota De\u0148 pre plan\u00E9tu 2026 vyhl\u00E1sil pod patron\u00E1tom Slovensk\u00E9ho hydrometeorologick\u00E9ho \u00FAstavu s\u00FA\u0165a\u017E t\u00EDmov z\u00E1kladn\u00FDch a stredn\u00FDch \u0161k\u00F4l \u201EKlimatick\u00E1 sebazmena\u201C. Zapojte sa so svoj\u00EDm \u0161kolsk\u00FDm t\u00EDmom do trojkolovej kore\u0161ponden\u010Dnej s\u00FA\u0165a\u017Ee."} buttonLabel={"Viac o s\u00FA\u0165a\u017Ei"} />
       <Aktualita image={bgImage5} reverse pillLabel="Podujatia" className="lg:ml-[-320px]" heading={"De\u0148 pre plan\u00E9tu 2026"} description={"Festival udr\u017Eate\u013En\u00E9ho \u017Eivota De\u0148 pre plan\u00E9tu 2026 sa uskuto\u010Dn\u00ED 5.11. v Aule UKF v Nitre. Jeho s\u00FA\u0165a\u017Eou bude op\u00E4\u0165 vyhodnotenie nieko\u013Ek\u00FDch celoslovensk\u00FDch s\u00FA\u0165a\u017E\u00ED \u017Eiakov z\u00E1kladn\u00FDch a stredn\u00FDch \u0161k\u00F4l, zameran\u00FDch na ochranu biodiverzity, eliminovanie pr\u00ED\u010Din klimatickej zmeny a tie\u017E s\u00FA\u0165a\u017E \u201EUdr\u017Eate\u013En\u00E1 \u0161kola Slovenska za \u0161kolsk\u00FD rok 2025/2026\u201C. U\u017E teraz sa te\u0161\u00EDme na genera\u010Dn\u00E9 di\u0161puty vedcov, pedag\u00F3gov a mana\u017E\u00E9rov firiem so \u017Eiakmi z\u00E1kladn\u00FDch a stredn\u00FDch \u0161k\u00F4l a sprievodn\u00FD program festivalu."} buttonLabel={"Viac o podujat\u00ED"} />
+
+        {/* Blog section */}
+      <div className="w-full max-w-348 flex flex-col lg:flex-row lg:items-end justify-between gap-4 mt-10 px-4 lg:px-0">
+        <div className="flex flex-col items-start gap-4">
+          <PillButton label="Blog" />
+          <h1 className="font-semibold text-2xl md:text-4xl text-[#23282B]">Aktuality z Požičanej planéty</h1>
+        </div>
+        <ActionButton label="Všetky aktuality" />
+      </div>
+      <div className="relative w-full max-w-348 px-4 lg:px-0">
+        <div className="flex flex-wrap lg:flex-nowrap gap-6 justify-center">
+          <BlogCard image={blog3} theme="Vzdelávanie" title="Úspešný festival Deň pre planétu 2025" date="21 Septembra 2025" />
+          <BlogCard image={blog2} theme="Biodiverzita" title="Úspešný festival Deň pre planétu 2025" date="21 Septembra 2025" />
+          <BlogCard image={blog1} theme="Biodiverzita" title="Úspešný festival Deň pre planétu 2025" date="21 Septembra 2025" />
+        </div>
+        <button className="hidden lg:flex absolute left-4 top-[40%] -translate-y-1/2 w-11 h-11 rounded-full bg-[#DDD7C2] items-center justify-center hover:bg-[#DDD7C2]/80 z-10">
+          <img src={arrow} alt="previous" className="w-2.5 h-2.5 rotate-180" style={{ filter: 'brightness(0) saturate(100%) invert(28%) sepia(15%) saturate(1200%) hue-rotate(30deg) brightness(95%) contrast(90%)' }} />
+        </button>
+        <button className="hidden lg:flex absolute right-4 top-[40%] -translate-y-1/2 w-11 h-11 rounded-full bg-[#DDD7C2] items-center justify-center hover:bg-[#DDD7C2]/80 z-10">
+          <img src={arrow} alt="next" className="w-2.5 h-2.5" style={{ filter: 'brightness(0) saturate(100%) invert(28%) sepia(15%) saturate(1200%) hue-rotate(30deg) brightness(95%) contrast(90%)' }} />
+        </button>
+        <div className="flex justify-center items-center gap-2 mt-6 w-full">
+          <div className="w-[16px] h-[6px] rounded-full bg-[#DDD7C2]"></div>
+          <div className="w-[40px] h-[6px] rounded-full bg-[#294E3B]"></div>
+          <div className="w-[16px] h-[6px] rounded-full bg-[#DDD7C2]"></div>
+        </div>
+      </div>
+
+      {/* Banners section */}
+      <div className="w-full max-w-348 flex flex-col md:flex-row gap-4 mt-10 px-4 lg:px-0">
+        <BannerCard pill="Pre učiteľov" title="Vzdelávanie, ktoré má zmysel" description="Pomáhame učiteľom pracovať s environmentálnymi témami zrozumiteľne, prakticky a tak, aby to deti naozaj zaujalo." buttonLabel="Viac o vzdelávaní" linkLabel="Zobraziť produkty" />
+        <BannerCard pill="Pre partnerov" title="Spolu tvoríme budúcnosť" description="Spolupracujte na rozvoji environmentálneho vzdelávania na školách po celom Slovensku." buttonLabel="Viac o partnerstve" />
+      </div>
+
+      <Footer />
     </main>
   )
 }
