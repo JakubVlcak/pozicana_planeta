@@ -1,7 +1,7 @@
 function BlogCard({ image, theme, title, date }) {
   return (
-    <div className="w-[416px] h-[436px] rounded-[32px] overflow-hidden flex flex-col bg-white">
-      <div className="w-full h-[280px] rounded-[32px] overflow-hidden flex-shrink-0">
+    <div className="w-full lg:w-[416px] h-[400px] rounded-[32px] overflow-hidden flex flex-col bg-white">
+      <div className="w-full h-[244px] rounded-[32px] overflow-hidden flex-shrink-0">
         <img src={image} alt={title} className="w-full h-full object-cover" />
       </div>
       <div className="flex flex-col gap-2 mt-4 pl-4">

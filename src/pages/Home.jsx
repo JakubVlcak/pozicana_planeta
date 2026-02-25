@@ -1,7 +1,7 @@
 import logo from '../assets/icons/Logo_PP.svg'
 import arrow from '../assets/icons/Arrow.svg'
 import cardBg from '../assets/pictures/card_background2.png'
-import bird from '../assets/pictures/bird.png'
+import bird from '../assets/pictures/bird2.png'
 import symbol from '../assets/icons/symbol.svg'
 import sea1 from '../assets/pictures/sea1.png'
 import sea2 from '../assets/pictures/sea2.png'
@@ -55,13 +55,13 @@ function Home() {
         </div>
         <div className="w-full lg:w-1/2 rounded-4xl bg-cover bg-center relative overflow-hidden min-h-[400px] lg:min-h-0" style={{ backgroundImage: `url(${cardBg})`, backgroundSize: '220%', backgroundPosition: 'center 80%' }}>
           <div className="absolute inset-x-0 top-0 h-1/2 bg-linear-to-b from-[#294E3B]/40 to-transparent"></div>
-          <div className="absolute inset-0 backdrop-blur-[4px] bg-gray-600/35"></div>
-          <div className="absolute inset-x-0 bottom-0 h-1/2 bg-linear-to-t from-black/50 to-transparent z-[1]"></div>
+          <div className="absolute inset-0 backdrop-blur-[5px] bg-gray-600/35"></div>
+          <div className="absolute inset-x-0 bottom-0 h-[333px] bg-linear-to-b from-transparent to-black/56 rounded-b-[32px] z-[1]"></div>
           <img src={bird} alt="bird" className="absolute inset-0 w-full h-full object-contain rotate-180 -scale-y-120 translate-x-[-40px] -translate-y-5 scale-150 -scale-x-120 z-[2]" />
           <div className="absolute top-32 md:top-50 right-4 md:right-5 z-[1] bg-[#ECE9E0] rounded-2xl p-4 md:p-6 flex flex-col gap-3 max-w-[250px] md:max-w-[300px]">
             <img src={symbol} alt="symbol" className="w-8 h-8" />
-            <p className="text-[#2E2E2E]/80 text-sm font-medium font-inter italic leading-snug">Za posledných 50 rokov<br /> zmizlo zo Zeme 70 %<br /> živých organizmov.</p>
-            <p className="text-[#2E2E2E]/80 text-sm font-semibold font-inter">WWF <br /><span className="font-medium">(Svetový fond na ochranu prírody)</span></p>
+            <p className="text-[#2E2E2E]/80 text-[16px] font-medium font-inter italic leading-[156%] tracking-[-0.02em]">Za posledných 50 rokov<br /> zmizlo zo Zeme 70 %<br /> živých organizmov.</p>
+            <p className="text-[#2E2E2E]/80 text-[14px] leading-[160%] tracking-[-0.02em] font-semibold font-inter">WWF <br /><span className="font-medium">(Svetový fond na ochranu prírody)</span></p>
           </div>
 
           <div className="absolute top-6 right-6 flex items-center gap-3 z-10">
@@ -85,7 +85,7 @@ function Home() {
         <PillButton label="Problem" />
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-105">
           <div className="flex flex-col">
-            <h1 className="font-semibold text-2xl md:text-4xl text-[#23282B] lg:whitespace-nowrap">Keď život (príroda) mizne <br />doslova pred očami</h1>
+            <h1 className="font-semibold text-[42px] leading-[100%] tracking-[-0.04em] text-[#23282B] lg:whitespace-nowrap">Keď život (príroda) mizne <br />doslova pred očami</h1>
             <ActionButton label="Viac o programe" className="mt-1" />
           </div>
           <p className="font-inter font-normal text-base text-[#23282B]/80 mb-10 lg:-ml-22">{"Viac ako 25 rokov, po\u010Das viac ako 100 exped\u00EDci\u00ED, dokumentujeme najm\u00E4 vodn\u00E9 ekosyst\u00E9my. S prib\u00FAdaj\u00FAcimi rokmi v\u0161ak st\u00E1le viac poci\u0165ujeme bezn\u00E1dej z drastick\u00FDch "}<br />{"a dramaticky r\u00FDchlych zmien, ke\u010F n\u00E1m \u017Eivot mizne doslova pred o\u010Dami. M\u00F4\u017Eeme iba potvrdi\u0165 z\u00E1very svetov\u00E9ho fondu na ochranu pr\u00EDrody (WWF): \u201Eza posledn\u00FDch 50 rokov zmizlo zo zemsk\u00E9ho povrchu 70% \u017Eiv\u00FDch organizmov\u201C. Na\u0161a vlastn\u00E1 sk\u00FAsenos\u0165 je hnac\u00EDm motorom na\u0161ej amb\u00EDcie, prispie\u0165 ku zmene. Apelova\u0165 na mlad\u00FDch \u013Eud\u00ED, ktor\u00FDch \u00FAlohou bude vysporiad\u00FA\u0165 sa s gigantick\u00FDm ekologick\u00FDm dlhom, ktor\u00FD im zanech\u00E1me. Na\u0161\u00EDm poslan\u00EDm sa st\u00E1va tvorba p\u00FAtav\u00E9ho a zrozumite\u013En\u00E9ho programu pre environment\u00E1lnu v\u00FDchovu, vzdel\u00E1vanie a osvetu."}</p>
@@ -121,7 +121,7 @@ function Home() {
         <PillButton label="Produkty" />
         <h1 className="font-semibold text-2xl md:text-4xl text-[#23282B] text-center">Výstupy programu Požičaná planéta</h1>
 
-        <p className="font-inter font-normal text-base text-[#23282B]/80 text-center max-w-3xl">Doteraz sme v rámci programu Požičaná planéta vytvorili didaktické učebné pomôcky a publikácie v štyroch tematických okruhoch: Požičaná planéta I.– Odcudzenie, Požičaná planéta II.– Konzum, Požičaná planéta III.– Biodiverzita, Požičaná planéta IV.– Zmena klímy. Každý tematický okruh tvoria 4 dokumentárne filmy, publikácia, odborná metodická príručka pre pedagogickú prax a 4 enviro-zošity. Spolu 16 dokumentárnych filmov, 16 enviro-zošitov, 4 odborné metodické príručky pre pedagógov, 4 publikácie, celkom 333 environmentálnych úloh a aktivít.</p>
+        <p className="font-inter font-normal text-base text-[#23282B]/80 text-center max-w-3xl">Doteraz sme v rámci programu Požičaná planéta vytvorili didaktické učebné pomôcky a publikácie<br></br> v štyroch tematických okruhoch: Požičaná planéta I.– Odcudzenie, Požičaná planéta II.– Konzum, Požičaná planéta III.– Biodiverzita, Požičaná planéta IV.– Zmena klímy. Každý tematický okruh tvoria<br></br> 4 dokumentárne filmy, publikácia, odborná metodická príručka pre pedagogickú prax a 4 enviro-zošity. Spolu 16 dokumentárnych filmov, 16 enviro-zošitov, 4 odborné metodické príručky pre pedagógov, 4 publikácie, celkom 333 environmentálnych úloh a aktivít.</p>
         <div className="flex flex-col sm:flex-row gap-4">
           <ActionButton label="Registrovať sa ako učiteľ" />
           <ActionButton label="Zobraziť všetky produkty" className="bg-transparent! text-[#E48156]! border border-[#E48156]" />
@@ -173,9 +173,8 @@ function Home() {
       </div>
 
     
-
-      <Aktualita image={bgImage4} className="lg:ml-40" pillLabel={"\u0053\u00FA\u0165a\u017E"} heading={"Klimatick\u00E1 sebazmena"} description={"Organiz\u00E1tori festivalu udr\u017Eate\u013En\u00E9ho \u017Eivota De\u0148 pre plan\u00E9tu 2026 vyhl\u00E1sil pod patron\u00E1tom Slovensk\u00E9ho hydrometeorologick\u00E9ho \u00FAstavu s\u00FA\u0165a\u017E t\u00EDmov z\u00E1kladn\u00FDch a stredn\u00FDch \u0161k\u00F4l \u201EKlimatick\u00E1 sebazmena\u201C. Zapojte sa so svoj\u00EDm \u0161kolsk\u00FDm t\u00EDmom do trojkolovej kore\u0161ponden\u010Dnej s\u00FA\u0165a\u017Ee."} buttonLabel={"Viac o s\u00FA\u0165a\u017Ei"} />
-      <Aktualita image={bgImage5} reverse pillLabel="Podujatia" className="lg:ml-[-320px]" heading={"De\u0148 pre plan\u00E9tu 2026"} description={"Festival udr\u017Eate\u013En\u00E9ho \u017Eivota De\u0148 pre plan\u00E9tu 2026 sa uskuto\u010Dn\u00ED 5.11. v Aule UKF v Nitre. Jeho s\u00FA\u0165a\u017Eou bude op\u00E4\u0165 vyhodnotenie nieko\u013Ek\u00FDch celoslovensk\u00FDch s\u00FA\u0165a\u017E\u00ED \u017Eiakov z\u00E1kladn\u00FDch a stredn\u00FDch \u0161k\u00F4l, zameran\u00FDch na ochranu biodiverzity, eliminovanie pr\u00ED\u010Din klimatickej zmeny a tie\u017E s\u00FA\u0165a\u017E \u201EUdr\u017Eate\u013En\u00E1 \u0161kola Slovenska za \u0161kolsk\u00FD rok 2025/2026\u201C. U\u017E teraz sa te\u0161\u00EDme na genera\u010Dn\u00E9 di\u0161puty vedcov, pedag\u00F3gov a mana\u017E\u00E9rov firiem so \u017Eiakmi z\u00E1kladn\u00FDch a stredn\u00FDch \u0161k\u00F4l a sprievodn\u00FD program festivalu."} buttonLabel={"Viac o podujat\u00ED"} />
+      <Aktualita image={bgImage4} className="lg:ml-40 px-4 lg:px-0" pillLabel={"\u0053\u00FA\u0165a\u017E"} heading={"Klimatick\u00E1 sebazmena"} description={"Organiz\u00E1tori festivalu udr\u017Eate\u013En\u00E9ho \u017Eivota De\u0148 pre plan\u00E9tu 2026 vyhl\u00E1sil pod patron\u00E1tom Slovensk\u00E9ho hydrometeorologick\u00E9ho \u00FAstavu s\u00FA\u0165a\u017E t\u00EDmov z\u00E1kladn\u00FDch a stredn\u00FDch \u0161k\u00F4l \u201EKlimatick\u00E1 sebazmena\u201C. Zapojte sa so svoj\u00EDm \u0161kolsk\u00FDm t\u00EDmom do trojkolovej kore\u0161ponden\u010Dnej s\u00FA\u0165a\u017Ee."} buttonLabel={"Viac o s\u00FA\u0165a\u017Ei"} />
+      <Aktualita image={bgImage5} reverse pillLabel="Podujatia" className="lg:ml-[-320px] mb-20 px-4 lg:px-0" heading={"De\u0148 pre plan\u00E9tu 2026"} description={"Festival udr\u017Eate\u013En\u00E9ho \u017Eivota De\u0148 pre plan\u00E9tu 2026 sa uskuto\u010Dn\u00ED 5.11. v Aule UKF v Nitre. Jeho s\u00FA\u0165a\u017Eou bude op\u00E4\u0165 vyhodnotenie nieko\u013Ek\u00FDch celoslovensk\u00FDch s\u00FA\u0165a\u017E\u00ED \u017Eiakov z\u00E1kladn\u00FDch a stredn\u00FDch \u0161k\u00F4l, zameran\u00FDch na ochranu biodiverzity, eliminovanie pr\u00ED\u010Din klimatickej zmeny a tie\u017E s\u00FA\u0165a\u017E \u201EUdr\u017Eate\u013En\u00E1 \u0161kola Slovenska za \u0161kolsk\u00FD rok 2025/2026\u201C. U\u017E teraz sa te\u0161\u00EDme na genera\u010Dn\u00E9 di\u0161puty vedcov, pedag\u00F3gov a mana\u017E\u00E9rov firiem so \u017Eiakmi z\u00E1kladn\u00FDch a stredn\u00FDch \u0161k\u00F4l a sprievodn\u00FD program festivalu."} buttonLabel={"Viac o podujat\u00ED"} />
 
         {/* Blog section */}
       <div className="w-full max-w-348 flex flex-col lg:flex-row lg:items-end justify-between gap-4 mt-10 px-4 lg:px-0">
@@ -186,7 +185,7 @@ function Home() {
         <ActionButton label="Všetky aktuality" />
       </div>
       <div className="relative w-full max-w-348 px-4 lg:px-0">
-        <div className="flex flex-wrap lg:flex-nowrap gap-6 justify-center">
+        <div className="flex flex-col items-center lg:flex-row lg:flex-nowrap gap-4 justify-center lg:h-[400px]">
           <BlogCard image={blog3} theme="Vzdelávanie" title="Úspešný festival Deň pre planétu 2025" date="21 Septembra 2025" />
           <BlogCard image={blog2} theme="Biodiverzita" title="Úspešný festival Deň pre planétu 2025" date="21 Septembra 2025" />
           <BlogCard image={blog1} theme="Biodiverzita" title="Úspešný festival Deň pre planétu 2025" date="21 Septembra 2025" />
@@ -205,7 +204,7 @@ function Home() {
       </div>
 
       {/* Banners section */}
-      <div className="w-full max-w-348 flex flex-col md:flex-row gap-4 mt-10 px-4 lg:px-0">
+      <div className="w-full max-w-348 flex flex-col md:flex-row gap-4 mt-10 px-4 lg:px-0 justify-center">
         <BannerCard pill="Pre učiteľov" title="Vzdelávanie, ktoré má zmysel" description="Pomáhame učiteľom pracovať s environmentálnymi témami zrozumiteľne, prakticky a tak, aby to deti naozaj zaujalo." buttonLabel="Viac o vzdelávaní" linkLabel="Zobraziť produkty" />
         <BannerCard pill="Pre partnerov" title="Spolu tvoríme budúcnosť" description="Spolupracujte na rozvoji environmentálneho vzdelávania na školách po celom Slovensku." buttonLabel="Viac o partnerstve" />
       </div>
